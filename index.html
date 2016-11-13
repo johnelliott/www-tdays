@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tDays</title>
+    <meta name="description" content="days since donald trump was elected">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="tdays" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="days since donald trump was elected" />
+
+    <meta name="twitter:creator" content="@johnelliottDC" />
+    <meta name="twitter:title" content="tdays" />
+    <meta name="twitter:description" content="days since donald trump was elected" />
+
+    <style>
+      html, body {height: 100%;}
+      body {text-align: center;}
+
+      main {
+        display: inline-block;
+        margin-top: 1.5em;
+        font-weight: bold;
+        font-size: 120pt;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+    </main>
+    <script>
+      document.getElementsByTagName('main')[0].innerText = (function tDays () {
+          return Math.floor((new Date() - new Date(2016, 10, 8)) / (1000 * 60 * 60 * 24))
+      })()
+    </script>
+  </body>
+</html>
