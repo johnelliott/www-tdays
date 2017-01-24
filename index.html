@@ -24,10 +24,10 @@
 
       main {
         display: inline-block;
-        margin-top: 1.5em;
+        margin-top: 25%;
         font-weight: bold;
         font-size: 120pt;
-        font-family: Arial, sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         text-decoration: none;
         color: black;
       }
@@ -38,7 +38,7 @@
     </main>
     <script>
       document.getElementsByTagName('main')[0].innerText = (function tDays () {
-          return Math.floor((new Date() - new Date(2016, 10, 8)) / (1000 * 60 * 60 * 24))
+          return Math.floor((new Date() - new Date(2017, 0, 20)) / (1000 * 60 * 60 * 24)) + 1
       })()
     </script>
   </body>
